@@ -33,3 +33,17 @@ Clean data with notebook:
 ```
 nytaxi_processing.ipynb
 ```
+
+## Create Scaled Dataset (optional)
+
+This is required for scaling experiments, but can be skipped when just getting the model up and running on the above dataset(s) produced from the notebook.
+
+Use the script:
+```
+scale_data.py
+```
+
+Example run to create a new synthetic dataset with 10x matrix dimensions:
+```
+python scale_dataset.py taxi_yellow_green_rideshare_march_to_apr2020_triplets.parquet scaled_data10x.parquet --scaling-factor 10
+```
