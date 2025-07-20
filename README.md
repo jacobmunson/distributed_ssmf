@@ -50,7 +50,7 @@ python scale_dataset.py taxi_yellow_green_rideshare_march_to_apr2020_triplets.pa
 
 ## Models
 
-### Baseline SSMF model:
+### 1. Baseline SSMF model:
 
 See:
   - Repo: https://github.com/kokikwbt/ssmf/tree/main
@@ -62,7 +62,7 @@ ssmf_forecast.py
 ```
 This uses `ncp.py` from the original SSMF repository. We include a slightly (non-substantively) modified version in this repository.
 
-### SSMF Tuples
+### 2. SSMF Tuples
 
 This is our version of SSMF that accepts a tuple stream of input. Can be found in:
 ```
@@ -73,4 +73,4 @@ You can run via:
 python ssmf_tuples.py taxi_yellow_green_rideshare_distinct_march_to_apr2020_triplets.parquet
 ```
 
-### Coming soon: Distributed SSMF, DistributedNCP
+### Coming soon: 3. Distributed SSMF, DistributedNCP
