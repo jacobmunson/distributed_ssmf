@@ -60,3 +60,4 @@ Our slight alteration designed to accumulate forecasts at each step:
 ```
 ssmf_forecast.py
 ```
+This uses `ncp.py` from the original SSMF repository. We include a slightly (non-substantively) modified version in this repository.
