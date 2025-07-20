@@ -34,7 +34,7 @@ Clean data with notebook:
 nytaxi_processing.ipynb
 ```
 
-## Create Scaled Dataset (optional)
+### Create Scaled Dataset (optional)
 
 This is required for scaling experiments, but can be skipped when just getting the model up and running on the above dataset(s) produced from the notebook.
 
@@ -46,4 +46,17 @@ scale_data.py
 Example run to create a new synthetic dataset with 10x matrix dimensions:
 ```
 python scale_dataset.py taxi_yellow_green_rideshare_march_to_apr2020_triplets.parquet scaled_data10x.parquet --scaling-factor 10
+```
+
+## Models
+
+### Baseline SSMF model:
+
+See:
+  - Repo: https://github.com/kokikwbt/ssmf/tree/main
+  - Paper: https://proceedings.neurips.cc/paper/2021/hash/1fb2a1c37b18aa4611c3949d6148d0f8-Abstract.html
+
+Our slight alteration designed to accumulate forecasts at each step:
+```
+ssmf_forecast.py
 ```
