@@ -62,4 +62,15 @@ ssmf_forecast.py
 ```
 This uses `ncp.py` from the original SSMF repository. We include a slightly (non-substantively) modified version in this repository.
 
-### Coming soon: SSMF Tuples, Distributed SSMF, DistributedNCP
+### SSMF Tuples
+
+This is our version of SSMF that accepts a tuple stream of input. Can be found in:
+```
+ssmf_tuples.py
+```
+You can run via:
+```
+python ssmf_tuples.py taxi_yellow_green_rideshare_distinct_march_to_apr2020_triplets.parquet
+```
+
+### Coming soon: Distributed SSMF, DistributedNCP
