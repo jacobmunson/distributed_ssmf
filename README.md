@@ -1,7 +1,5 @@
-# distributed_ssmf
-This repository houses a Distributed Shifting Seasonal Matrix Factorization model.
-
-## Under Construction - pending local HPC maintenance 
+# Distributed SSMF d 
+This repository houses a Distributed Shifting Seasonal Matrix Factorization model. The model runs on a 2D grid of processes with MPI.
 
 ## To install:
 ```
