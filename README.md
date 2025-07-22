@@ -73,4 +73,13 @@ You can run via:
 python ssmf_tuples.py taxi_yellow_green_rideshare_distinct_march_to_apr2020_triplets.parquet
 ```
 
-### Coming soon: 3. Distributed SSMF, DistributedNCP
+### 3. Distributed SSMF
+
+Our Distributed SSMF model is found in:
+```
+ssmf_mpi_2d_dist_init.py
+```
+This includes the Distributed NCP initialization model `ncp_distributed_2d()` , which is in the above script. Supporting functions are found in:
+```
+ncp_distributed.py
+```
